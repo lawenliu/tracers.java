@@ -5,12 +5,23 @@ group = 'org.algorithm-visualizer'
 version = '2.3.11'
 sourceCompatibility = 1.8
 
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
+}
+
+dependencies {
+    implementation 'org.algorithm-visualizer:tracers.java:+'
 }
 
 task sourcesJar(type: Jar) {
