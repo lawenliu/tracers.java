@@ -1,5 +1,5 @@
 apply plugin: 'java-library'
-apply plugin: 'maven-public'
+apply plugin: 'maven-publish'
 
 group = 'org.algorithm-visualizer'
 version = '2.3.11'
