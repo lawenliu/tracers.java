@@ -2,7 +2,7 @@ apply plugin: 'java-library'
 apply plugin: 'maven-public'
 
 group = 'org.algorithm-visualizer'
-version = '2.3.10'
+version = '2.3.11'
 sourceCompatibility = 1.8
 
 repositories {
