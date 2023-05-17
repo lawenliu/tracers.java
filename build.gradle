@@ -1,16 +1,9 @@
-apply plugin: 'java-library'
+apply plugin: 'application'
 apply plugin: 'maven-publish'
 
 group = 'org.algorithm-visualizer'
 version = '2.3.11'
 sourceCompatibility = 1.8
-
-allprojects {
-    repositories {
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
-}
 
 repositories {
     mavenCentral()
@@ -34,7 +27,6 @@ task javadocJar(type: Jar) {
     from javadoc
 }
 
-artifacts {
-    archives sourcesJar
-    archives javadocJar
+application {
+    mainClass.set("Main")
 }
